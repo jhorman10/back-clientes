@@ -1,6 +1,9 @@
 package com.codescripters.clientesapirest.clientesapirest.models.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -13,11 +16,19 @@ public class Cliente implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @NotEmpty
+    @Size(min=2, max = 12)
     @Column(nullable = false)
     private String nombre;
+
+    @NotEmpty
+    @Size(min=2, max = 12)
     private String apellido;
+
+    @Email
     @Column(nullable = false, unique = true)
     private String email;
+
     @Column(name = "created_at")
     @Temporal(TemporalType.DATE)
     private Date createdAt;
