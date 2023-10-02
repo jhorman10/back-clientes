@@ -71,7 +71,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>clients-api-test</finalName>
+		<finalName>clientes-apirest</finalName>
 	</build>
 
 
