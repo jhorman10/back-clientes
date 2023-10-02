@@ -5,8 +5,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.3</version>
-		<relativePath/>
+		<version>3.1.2</version>
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.codescripters.clientes-apirest</groupId>
 	<artifactId>clientes-apirest</artifactId>
@@ -66,8 +66,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.11.0</version>
 				<configuration>
-					<source>8</source>
-					<target>8</target>
+					<source>1.8</source> <!-- Cambia esto a la versión de Java compatible -->
+					<target>1.8</target> <!-- Cambia esto a la versión de Java compatible -->
 				</configuration>
 			</plugin>
 		</plugins>
