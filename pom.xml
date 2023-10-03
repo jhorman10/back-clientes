@@ -70,6 +70,18 @@
 					<target>1.8</target> <!-- Cambia esto a la versión de Java compatible -->
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>com.codescripters.clientesapirest.clientesapirest.ClientesApirestApplication</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
 		</plugins>
 		<finalName>clientes-apirest</finalName>
 	</build>
