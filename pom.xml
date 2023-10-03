@@ -54,7 +54,7 @@
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
-            <version>24.0.1</version>
+            <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
@@ -70,18 +70,8 @@
 					<target>1.8</target> <!-- Cambia esto a la versión de Java compatible -->
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>com.codescripters.clientesapirest.clientesapirest.ClientesApirestApplication</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
 		</plugins>
-		<finalName>clientes-apirest</finalName>
 	</build>
+
+
 </project>
